@@ -1,4 +1,5 @@
 require 'squib'
+require 'game_icons'
 
 Squib::Deck.new(cards: 3, layout: 'layout.yml') do
   text str: 'Hello, World!'
