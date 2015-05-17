@@ -1,3 +1,11 @@
 name:
-  extends: titles
+  extends: title
   font: Sans Bold 45
+set1a:
+  extends: bonus5
+set1b:
+  extends: set1a
+  x: += 175
+set1c:
+  extends: set1b
+  x: += 175
