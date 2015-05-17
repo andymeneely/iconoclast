@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"build_systems":
+	[
+     	{
+     		"name": "Rake", "shell_cmd": "rake",
+     	},
+    ]
+}
