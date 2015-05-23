@@ -7,12 +7,17 @@ data = {
   'icon' => ['broadsword', 'bowie-knife', 'bone-knife'],
 }
 
+fg = '#000' # foreground for text and most icons
+bg = '#fff' # backgroudn for text and most icons
+
+
 Squib::Deck.new(cards: data['name'].size,
                 layout: %w(hand.yml layout.yml)) do
-  background color: :white
+  background color: bg
 
   text str: data['name'], layout: :name
-  broadsword = GameIcons.get('broadsword').recolor(fg: '#000', bg: '#fff').string
+
+  broadsword = GameIcons.get('broadsword').recolor(fg: fg, bg: bg).string
 
   svg data: broadsword, layout: :art
   svg data: broadsword, layout: :bonus1
