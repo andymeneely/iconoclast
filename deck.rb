@@ -2,10 +2,7 @@ require 'squib'
 require 'game_icons'
 require_relative 'squib_helpers'
 
-data = {
-  'name' => ['Super Sword', 'Bowie Knife', 'Bone Knife'],
-  'icon' => ['broadsword', 'bowie-knife', 'bone-knife'],
-}
+data = Squib.xlsx file: 'data/deck.xlsx'
 
 fg = '#000' # foreground for text and most icons
 bg = '#fff' # backgroudn for text and most icons
