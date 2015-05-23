@@ -1,0 +1,14 @@
+{
+  "0": {
+    "name": "Super Sword",
+    "icon": "broadsword"
+  },
+  "1": {
+    "name": "Bowie Knife",
+    "icon": "bowie-knife"
+  },
+  "2": {
+    "name": "Bone Knife",
+    "icon": "bone-knife"
+  }
+}
