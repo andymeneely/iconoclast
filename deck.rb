@@ -1,5 +1,10 @@
 require 'squib'
 require 'game_icons'
+require_relative 'squib_helpers'
+
+data = {
+  'name' => ['Super Sword', 'Bowie Knife', 'Bone Knife']
+}
 
 Squib::Deck.new(layout: %w(hand.yml layout.yml)) do
   background color: :white
@@ -18,4 +23,5 @@ Squib::Deck.new(layout: %w(hand.yml layout.yml)) do
   svg data: bone_knife, layout: :set1c
 
   save format: :png
+  save_json cards: cards.size, deck: data, file: 'data/deck.json'
 end
