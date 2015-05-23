@@ -17,10 +17,11 @@ Squib::Deck.new(cards: data['name'].size,
 
   text str: data['name'], layout: :name
 
-  broadsword = GameIcons.get('broadsword').recolor(fg: fg, bg: bg).string
-
-  svg data: broadsword, layout: :art
-  svg data: broadsword, layout: :bonus1
+  icons = data['icon'].collect do |icon|
+    GameIcons.get(icon).recolor(fg: fg, bg: bg).string
+  end
+  svg data: icons, layout: :art
+  svg data: icons, layout: :bonus1
 
   # TODO do the sets.
   # bowie_knife = GameIcons.get('bowie-knife').string
