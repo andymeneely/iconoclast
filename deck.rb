@@ -33,5 +33,6 @@ Squib::Deck.new(cards: data['name'].size,
   # svg data: bone_knife, layout: :set1c
 
   save format: :png
+  save_sheet prefix: 'sheet_', columns: 3
   save_json cards: cards.size, deck: data, file: 'data/deck.json'
 end
